@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tiler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/tpv5hmb.css">
+</head>
+
+<body>
+    <header>
+        <div class="title-lockup">
+            <h1>Tiler</h1>
+            <!-- <p>Instructions sentence one</p> -->
+        </div>
+        <div class="controls-container">
+            <div class="palette-container">
+                <label>Select Colors:</label>
+                <div class="palette-inputs-container">
+                    <input type="color" class="palette-color-picker" value="#ff0000">
+                    <input type="color" class="palette-color-picker" value="#00ff00">
+                    <input type="color" class="palette-color-picker" value="#0000ff">
+                    <input type="color" class="palette-color-picker" value="#ffff00">
+                    <div class="color-indicator"></div>
+                </div>
+            </div>
+            <div class="border-color-container">
+                <label>Border Color:</label>
+                <input type="color" class="border-color-picker" value="#ededed">
+            </div>
+            <div class="border-thickness-container">
+                <label>Border Thickness:</label>
+                <input type="range" class="border-thickness" min="1" max="10" value="1">
+            </div>
+            <button class="reset-button">Reset Grids</button>
+        </div>
+
+    </header>
+
+    <!-- ====== Small Grids Section ====== -->
+    <div class="small-grids-container"></div>
+
+    <!-- ====== Large Grid Section ====== -->
+    <div class="large-grid-container"></div>
+
+    <!-- ====== jQuery and jQuery UI ====== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- ====== Custom Scripts ====== -->
+    <script src="js/create-grids.js"></script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>
